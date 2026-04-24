@@ -1,0 +1,109 @@
+[gd_scene format=3 uid="uid://cudsi1xqgvt1c"]
+
+[ext_resource type="Texture2D" uid="uid://cvq1k0adg3oti" path="res://Editor/RTV_Logo.png" id="1_iysow"]
+[ext_resource type="Script" uid="uid://g4l5wdx6g8w3" path="res://mods/ScreenSaver/ScreenSaver/ss_dvd.gd" id="1_p7c1g"]
+
+[node name="ScreenSaver" type="Control" unique_id=620583386]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Screen" type="ColorRect" parent="." unique_id=441823162]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+script = ExtResource("1_p7c1g")
+
+[node name="Logo" type="Sprite2D" parent="." unique_id=170560444]
+position = Vector2(-500, -500)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_iysow")
+
+[node name="Hitbox" type="ColorRect" parent="Logo" unique_id=1403881318]
+custom_minimum_size = Vector2(1450, 380)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1749.0
+offset_top = -702.0
+offset_right = -254.00012
+offset_bottom = -322.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(1, 0, 1, 0)
+
+[node name="Hit_R" type="Control" parent="Logo" unique_id=1923929865]
+custom_minimum_size = Vector2(4, 4)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -254.0
+offset_top = -512.0
+offset_right = -254.0
+offset_bottom = -512.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Hit_L" type="Control" parent="Logo" unique_id=693066198]
+custom_minimum_size = Vector2(4, 4)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1749.0
+offset_top = -512.0
+offset_right = -1749.0
+offset_bottom = -512.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Hit_T" type="Control" parent="Logo" unique_id=996182335]
+custom_minimum_size = Vector2(4, 4)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1024.0
+offset_top = -697.0
+offset_right = -1024.0
+offset_bottom = -697.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Hit_B" type="Control" parent="Logo" unique_id=1639067798]
+custom_minimum_size = Vector2(4, 4)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1024.0
+offset_top = -327.0
+offset_right = -1024.0
+offset_bottom = -327.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)

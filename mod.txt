@@ -1,0 +1,7 @@
+[mod]
+name="Screen Saver"
+id="screen-saver"
+version="0.1.0"
+
+[autoload]
+ScreenSaverBoot="res://mods/ScreenSaver/ScreenSaver/Loader.gd"

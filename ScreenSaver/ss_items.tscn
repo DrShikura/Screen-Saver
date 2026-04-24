@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://7t3orp2iytxj"]
+
+[ext_resource type="Script" uid="uid://cy8wmirmvgqu5" path="res://mods/ScreenSaver/ScreenSaver/ss_items.gd" id="1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l023p"]
+
+[node name="ScreenSaver" type="Control" unique_id=620583386]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=441823162]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Spawner" type="PanelContainer" parent="." unique_id=1002713975]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0)
+theme_override_styles/panel = SubResource("StyleBoxEmpty_l023p")
+script = ExtResource("1")
